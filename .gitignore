@@ -79,3 +79,8 @@ Thumbs.db
 *.log
 scratch/
 tmp/
+
+# Scan evidence and screenshots
+evidence/
+evidence/screenshots/
+
