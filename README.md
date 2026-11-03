@@ -82,24 +82,6 @@ AegisDAST has been verified and benchmarked against industry-standard vulnerable
 
 AegisDAST automatically captures screenshot artifacts when verifying browser-executable vulnerabilities such as Cross-Site Scripting (XSS).
 
-### 1. Reflected Cross-Site Scripting (XSS) Proof
-
-When canary payloads trigger script execution, Playwright intercepts DOM events and captures rendering evidence:
-
-| Reflected Query Parameter Trigger | Injected Element Execution |
-| :---: | :---: |
-| ![Reflected XSS Evidence](evidence/screenshots/xss/step_001_xss_q_evidence_bb8c2e.png) | ![Reflected XSS Step](evidence/screenshots/xss/step_002_xss_id_evidence_3ad91b.png) |
-
-### 2. Persistent / Stored XSS Proof
-
-Stored XSS is proven by injecting payloads into persistent input sinks (e.g., guestbooks, comments) and navigating to the viewing page with an automated browser session:
-
-| Stored Payload Execution | Persistent Sink DOM Snapshot |
-| :---: | :---: |
-| ![Stored XSS Evidence](evidence/screenshots/stored_xss/step_025_stored_xss_txtName_evidence_52baf1.png) | ![Stored XSS Step](evidence/screenshots/stored_xss/step_022_stored_xss_name_evidence_1180a4.png) |
-
----
-
 ## Vulnerability Taxonomy & Evidence Matrix
 
 Every finding produced by AegisDAST is paired with an exact **Evidence Type**:
